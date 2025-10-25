@@ -21,16 +21,22 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.native_app"
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
-
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportPictureInPicture": true
+        }
+      ]
     ]
-    
   }
 }

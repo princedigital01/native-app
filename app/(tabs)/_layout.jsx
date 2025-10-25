@@ -6,12 +6,14 @@ const TabLayout = () => {
 
     const TabIcon = ({icon, color, name, focused})=>{
         return (
-            <View className='items-center justify-center gap-2'>
+            <View 
+              className='items-center w-[60px] justify-center gap-2 mt-5'
+            >
                 <Image
                     source={icon}
                     resizeMode='contain'
                     tintColor={color}
-                    className='w-6 h-6'
+                    className='w-6 h-6 '
 
                 />
                 <Text
@@ -32,9 +34,10 @@ const TabLayout = () => {
             tabBarInactiveTintColor: '#CDCDE0',
             tabBarStyle:{
                 backgroundColor: '#161622',
-                borderTopWidth:1,
+                borderTopWidth:0,
                 borderTopColor: '#232533',
                 height: 84,
+                padding:0,
 
             }
           }}
@@ -103,6 +106,7 @@ const TabLayout = () => {
               
               }}
             />
+
         </Tabs>
     </>
   )
